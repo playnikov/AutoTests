@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.2.21"
+    kotlin("plugin.serialization") version "1.9.24"
 }
 
 group = "ru.matveev"
@@ -16,6 +17,7 @@ dependencies {
     testImplementation("io.ktor:ktor-client-content-negotiation:3.6.0")
     testImplementation("io.ktor:ktor-serialization-kotlinx-json:3.6.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
+    testImplementation("org.slf4j:slf4j-simple:2.0.20")
     testImplementation(kotlin("test"))
 }
 
